@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 #twitter_username: username
 github_username: iransquin
 minimal_mistakes_skin: air # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -59,11 +59,14 @@ author:
   name   : "Ignace Ransquin"
   avatar : "/assets/images/photo_face.jpg"
   bio    : "Research engineer, focusing on formation flight strategy, Ph.D."
-  location: "UCLouvain, Belgium"
+  #location: "UCLouvain, Belgium"
   links:
+    - label: "UCLouvain, Belgium"
+      icon: "fas fa-fw fa-university"
+      url: "mailto:ignace.ransquin@uclouvain.be"
     - label: "Contact"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:ignace.ransquin@uclouvain.be"
+      url: "https://uclouvain.be/fr/index.html"
     # - label: "Twitter"
     #   icon: "fab fa-fw fa-twitter-square"
     #   url: "https://twitter.com/"
@@ -105,12 +108,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-    # classes: wide
-    #   tagline: ""
-    #   header:
-    #     overlay_image: /assets/images/FormationFlightHeader.jpg
-    #     overlay_filter: linear-gradient(rgba(70, 77, 132, 0.5), rgba(118, 188, 232, 0.5))
-    #     caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/5KV6OfBw-4c)"
+      classes: wide
+      tagline: ""
+      header:
+        overlay_image: /assets/images/FormationFlightHeaderClip.jpg
+        #overlay_filter: linear-gradient(rgba(70, 77, 132, 0.5), rgba(118, 188, 232, 0.5))
+        #overlay_filter: linear-gradient(rgba(255, 77, 132, 0.5), rgba(255, 188, 232, 0.5))
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/5KV6OfBw-4c)"
+        # actions:
+        #   - label: "More Info"
+        #     url: "https://unsplash.com"
 
 category_archive:
   type: liquid
