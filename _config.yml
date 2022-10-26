@@ -13,15 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Ignace Ransquin
+email: ignacer.ransquin@uclouvain.be
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  Welcome to my website, where I will talk about my research and my projects
+#twitter_username: username
+github_username: iransquin
+minimal_mistakes_skin: air # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 search: true
 
 # Build settings
@@ -31,7 +29,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/Brussels # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,34 +56,32 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Ignace Ransquin"
+  avatar : "/assets/images/photo_face.jpg"
+  bio    : "Research engineer, focusing on formation flight strategy, Ph.D."
+  location: "UCLouvain, Belgium"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+    - label: "Contact"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:ignace.ransquin@uclouvain.be"
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   url: "https://twitter.com/"
+    # - label: "GitHub"
+    #   icon: "fab fa-fw fa-github"
+    #   url: "https://github.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/ignace-ransquin-b09637114/"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0001-5402-1673"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/iransquin/iransquin.github.io"
 
 defaults:
   # _posts
@@ -99,6 +95,9 @@ defaults:
       comments: true
       share: true
       related: true
+      date_format: "%Y-%m-%d"
+      mathjax: true
+      classes: wide
   # _pages
   - scope:
       path: "_pages"
@@ -106,6 +105,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+    classes: wide
+      tagline: ""
+      header:
+        overlay_image: /assets/images/FormationFlightHeader.jpg
+        overlay_filter: linear-gradient(rgba(70, 77, 132, 0.5), rgba(118, 188, 232, 0.5))
+        caption: "Photo credit: [**Unsplash**](https://unsplash.com/photos/5KV6OfBw-4c)"
 
 category_archive:
   type: liquid
@@ -113,3 +118,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# https://github.com/jekyll/jekyll/issues/4705
+repository: iransquin/iransquin.github.io
