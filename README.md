@@ -4,7 +4,7 @@ I have used [**Minimal Mistakes Jekyll theme**](https://github.com/mmistakes/min
 
 ---
 ## Questions ?
-I you have any quesitons, feel free to send an [**email**](mailto:ignace.ransquin@uclouvain.be)
+If you have any quesitons, feel free to send an [**email**](mailto:ignace.ransquin@uclouvain.be)
 
 
 
